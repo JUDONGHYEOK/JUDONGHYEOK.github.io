@@ -9,8 +9,32 @@ body {
   transition: color 0.5s ease-in-out;
   text-align: center;
   margin-top: 200px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-
+input{
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  font-weight: 400;
+  font-size: 20px;
+  background: inherit;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 70px;
+  transition: all .3s ease-in-out;
+}
+input::placeholder{
+  color:white;
+}
+input:focus,
+input:active {
+  color: rgb(22, 7, 7);
+  text-indent: 0;
+  background: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 .clicked {
   color: #7f8c8d;
 }
@@ -24,6 +48,32 @@ body {
   display: block;
   font-size: 20px;
 }
+.button {
+
+
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-1 {
+  background-color: transparent;
+  border: 3px solid #ee4705;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #ee4705;
+}
+.button-1:hover {
+  box-shadow: 0 0 10px 0 #ee4705 inset, 0 0 20px 2px #ee4705;
+  border: 3px solid #ee4705;
+}
+
+
 
 @keyframes fadeIn {
   from {
