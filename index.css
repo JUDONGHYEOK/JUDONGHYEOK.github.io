@@ -5,15 +5,18 @@ body {
   cursor: pointer;
 }
 body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   transition: color 0.5s ease-in-out;
-  text-align: center;
-  margin-top: 200px;
+  flex-wrap: wrap;
+  flex-direction: column;
   font-weight: 300;
   letter-spacing: 1px;
 }
-input{
-  display: inline-block;
+input {
   padding: 10px 0 10px 15px;
   font-weight: 400;
   font-size: 20px;
@@ -22,10 +25,10 @@ input{
   border-radius: 3px;
   outline: 0;
   text-indent: 70px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-input::placeholder{
-  color:white;
+input::placeholder {
+  color: white;
 }
 input:focus,
 input:active {
@@ -49,31 +52,26 @@ input:active {
   font-size: 20px;
 }
 .button {
-
-
   text-align: center;
   color: #000;
   text-transform: uppercase;
   font-weight: 600;
   margin-left: 30px;
   cursor: pointer;
-  display: inline-block;
 }
 
 .button-1 {
   background-color: transparent;
   border: 3px solid #ee4705;
   border-radius: 50px;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   color: #ee4705;
 }
 .button-1:hover {
   box-shadow: 0 0 10px 0 #ee4705 inset, 0 0 20px 2px #ee4705;
   border: 3px solid #ee4705;
 }
-
-
 
 @keyframes fadeIn {
   from {
